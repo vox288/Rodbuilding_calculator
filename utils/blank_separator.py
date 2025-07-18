@@ -104,7 +104,7 @@ class BlankSeparator:
         """
         self._validate_input()
         scaled_ring_position = {
-            ("Ring", 1): 0.00,
+            ("Ring 1"): 0.00,
         }
         ring_positions = self.calc_ring_positions()
         total_ringed_section = sum(ring_positions.values())
@@ -112,7 +112,7 @@ class BlankSeparator:
         for ring in ring_positions.values():
             scale_down = ring / total_ringed_section
             scale_up = scale_down * self.calc_ringed_section()
-            scaled_ring_position["Ring", ring_number] = round(scale_up, 2)
+            scaled_ring_position[f"Ring {ring_number}"] = round(scale_up, 2)
             ring_number += 1
         return scaled_ring_position
 
