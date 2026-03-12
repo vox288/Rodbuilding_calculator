@@ -1,6 +1,7 @@
 import unittest
 from utils.blank_separator import BlankSeparator
 
+# to run test use  python -m tests.test_blank_separator  from main directory
 
 class TestBlankSeparator(unittest.TestCase):
 

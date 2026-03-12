@@ -5,6 +5,7 @@ from PySide6.QtWidgets import (QGraphicsPolygonItem,
                                QApplication)
 from utils.rod_graphic import RodGraphic
 
+# to run test use  python -m tests.test_blank_separator  from main directory
 
 class TestRodGraphic(unittest.TestCase):
         

@@ -4,6 +4,7 @@ import sys
 
 from main import Main_Window
 
+# to run test use  python -m tests.test_main  from main directory
 
 class TestMainWindow(unittest.TestCase):
     @classmethod

@@ -1,7 +1,7 @@
 # This programm is meant to be used for rodbuilding:
 #   It calculates measurements for Fishing-Rods
 #
-# It starts a GUI window based on the PySide6 Framework.
+# main.py runs a GUI window based on the PySide6 Framework (Copyright © The Qt Company).
 #
 # Using the:
 #   Rodlength-dial  -- for adjusting the rodlength
@@ -36,7 +36,16 @@
 # existing Rod_Specs.txt file, with your last setup,
 # listing all measurements.
 #
+# If you don't want to use the GUI you could just use blank_separator.py
+# in the utils directory. Just uncomment the bottom lines and adjusting it as needed.
+#
 # Author: Jens Michalik     E-Mail: vox288@gmail.com
+#
+# This project is licensed under the MIT License
+#
+# This application uses PySide6 (Copyright © The Qt Company),
+# licensed under the GNU Lesser General Public License (LGPL) version 3.
+# The source code of PySide6 is available at www.qt.io.
 
 
 import sys
