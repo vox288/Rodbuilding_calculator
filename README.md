@@ -28,13 +28,13 @@ Using the:
    - position for the start_ring from bottom up
    - length of the ringed section
    - gaps between the rings, from the tip to startring
-           and with it their exact position.
-           You measure from each ring to the next one:
-             {"Ring 1":0:0, "Ring 2: 8.75","Ring 3": 12.50}
-                             **means**
-             | Tip-Ring--> 8.75 -->Ring 2--> 12.50 -->Ring 3
+     and with it their exact position.
+   - You measure from each ring to the next one: 
+   - {"Ring 1":0:0, "Ring 2: 8.75","Ring 3": 12.50}
+   - means Ring 1 on Tip --> Ring 2 at 8.75 from tip --> Ring 3 at 21.25 from tip
+ 
     
-     ****All measurements are in Centimeters****
+        ****All measurements are in Centimeters****
 
  The programm will automaticaly create or overwrite an 
  existing Rod_Specs.txt file, with your last setup,
