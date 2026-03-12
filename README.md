@@ -1,5 +1,5 @@
-This programm is meant to be used for rodbuilding
-- It calculates measurements for Fishing-Rods
+<h3>This programm is meant to be used for rodbuilding</h3>
+- It calculates measurements for Fishing-Rod components.
 
 main.py starts a GUI window based on the PySide6 Framework (Copyright © The Qt Company).
 
