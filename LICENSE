@@ -19,3 +19,18 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Third-Party Licenses
+
+This software uses the PySide6 library (Qt for Python).
+
+- **Library:** PySide6 (Qt for Python)
+- **License:** GNU Lesser General Public License (LGPL) version 3.0
+- **Source Code:** The source code for PySide6 can be found at [https://code.qt.io](https://code.qt.io)
+- **Copyright:** Copyright (C) 2024 The Qt Company Ltd. and other contributors.
+
+### LGPL Compliance
+In accordance with the LGPLv3:
+1. This application is dynamically linked to the PySide6 libraries.
+2. Users are permitted to replace the PySide6 library files used by this application with modified versions of the library, provided the interface remains compatible.
+3. A copy of the LGPLv3 and GPLv3 license texts is included in the application's distribution folder (see `LICENSE.LGPL` and `LICENSE.GPL`).
