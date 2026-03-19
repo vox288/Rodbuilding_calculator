@@ -54,3 +54,4 @@ This project is licensed under the MIT License
 This application uses PySide6 (Copyright © The Qt Company),
 licensed under the GNU Lesser General Public License (LGPL) version 3.
 The source code of PySide6 is available at www.qt.io.
+A Big thanks to them!
