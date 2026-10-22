@@ -1,4 +1,4 @@
-<h3>This programm is meant to be used for rodbuilding</h3>
+<h3>This program is meant to be used for rodbuilding</h3>
 
 - It calculates measurements for Fishing-Rod components.
 - Written in python 3.12
