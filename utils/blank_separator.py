@@ -54,6 +54,8 @@ class BlankSeparator:
       
 
     def calc_start_ring(self) -> float:
+        #### Needs correction, position of the start ring should be based 
+        #### on reelseat position rather than rodlenght
         """Based on rodlenght returns position for the start_ring."""
         self._validate_input()
         start_ring = (self.length / 100) * 24
@@ -76,8 +78,8 @@ class BlankSeparator:
 
     def calc_ring_positions(self) -> dict:
         """
-        Calculates the gaps and the increase of their size,
-        based on the modifier.
+        Calculates the gaps and the increase of gap size,
+        between rings based on the modifier.
         
         Divides the ringed section into even pieces and multiplies
         them to the power of an increasing modifier
@@ -90,7 +92,7 @@ class BlankSeparator:
         increase = 0.8
         for ring in range(self.rings - 1):
             position = sections**increase
-            ring_positions[ring + 2] = round(position, 2)
+            ring_positions[ring + 1] = round(position, 2)
             increase += self.modifier
         return ring_positions
 
@@ -121,9 +123,8 @@ class BlankSeparator:
 #For testing purpose
 #
 #if __name__ == "__main__":
-#    run = BlankSeparator(210, 7, 0.1)
-#    print("reel_seat at", run.calc_reel_seat())
-#    print("start_ring at", run.calc_start_ring())
-#    print("ringed section", run.calc_ringed_section())
-#    print("ring gaps", run._calc_ring_positions())
-#    print("ring positions at", run.scale_ring_positions())
+#    run = BlankSeparator(270, 7, 0.08)
+#    print("Center of reel_seat at", run.calc_reel_seat())
+#    print("Start_ring position from reelseat up", run.calc_start_ring())
+#    print("Lenght of the ringed section", run.calc_ringed_section())
+#    print("Ring positions/gaps from tip to bottom", run.scale_ring_positions())
