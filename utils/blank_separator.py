@@ -31,6 +31,7 @@ class BlankSeparator:
         self.rings = rings
         self.modifier = modifier
 
+
     def _validate_input(self):
         if not isinstance(self.length, (int, float)):
             raise TypeError("Rodlenght must be a number > 0")
@@ -45,10 +46,11 @@ class BlankSeparator:
         if self.modifier < 0.04 or self.modifier > 0.16:
             raise ValueError("Modifier is beyond boundary 0.04 - 0.16")
 
+
     def calc_reel_seat(self) -> float:
         """Based on rodlenght returns ideal position for reel_seat"""
         self._validate_input()
-        multiplicator = 17 - (self.length/100)
+        multiplicator = 17 - (self.length / 100)
         reel_seat = (self.length / 100) * multiplicator
         return round(reel_seat, 2)
       
@@ -62,7 +64,6 @@ class BlankSeparator:
         return round(start_ring, 2)
 
 
-
     def calc_ringed_section(self) -> float:
         """
         Subtracts reel_seat and start_ring from length
@@ -73,7 +74,6 @@ class BlankSeparator:
             self.calc_reel_seat() + self.calc_start_ring()
         )
         return round(ringed_section, 2)
-
 
 
     def calc_ring_positions(self) -> dict:
@@ -95,7 +95,6 @@ class BlankSeparator:
             ring_positions[ring + 1] = round(position, 2)
             increase += self.modifier
         return ring_positions
-
 
 
     def scale_ring_positions(self):
@@ -120,7 +119,7 @@ class BlankSeparator:
 
 
 
-#For testing purpose
+##For testing purpose
 #
 #if __name__ == "__main__":
 #    run = BlankSeparator(270, 7, 0.08)
